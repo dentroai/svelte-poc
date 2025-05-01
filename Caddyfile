@@ -8,12 +8,12 @@ your-domain.com {
     reverse_proxy localhost:3000
 
     # Optional: Add headers for security, logging, etc.
-    # header {
-    #   Strict-Transport-Security "max-age=31536000;"
-    #   X-Content-Type-Options "nosniff"
-    #   X-Frame-Options "DENY"
-    #   Referrer-Policy "strict-origin-when-cross-origin"
-    # }
+    header {
+      Strict-Transport-Security "max-age=31536000;"
+      X-Content-Type-Options "nosniff"
+      X-Frame-Options "DENY"
+      Referrer-Policy "strict-origin-when-cross-origin"
+    }
 
     # Optional: Customize logging
     # log {
